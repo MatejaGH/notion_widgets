@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Diphylleia&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Diphylleia', serif;
+			font-size: 20px;
+			font-weight: bold;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #272727;
+			text-decoration: none;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #ece5f0;
+		}
+
+		.border {
+			border: 0px solid #cccccc;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #ed005f;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border">
+		<a id="home" onclick="navigate(this.id)" href="https://www.notion.so/matejag/Portfolio-main-77342393996640a1ba935ca9f83405a5"> <i class="fa-solid fa-home"></i> Home</a>
+		<a id="GameDesign" onclick="navigate(this.id)" href="https://www.notion.so/matejag/Portfolio-game-design-ebef686823d149f6993ceee8f513c4d3"> <i class="fa-solid fa-gamepad"></i> Game Design</a>
+		<a id="AppDesign" onclick="navigate(this.id)" href="https://www.notion.so/matejag/Portfolio-app-design-c92e12327f6447f3be6769c76171abe2"> <i class="fa-solid fa-mobile-screen-button"></i> App Design</a>
+		<a id="3DArt" onclick="navigate(this.id)" href="https://www.notion.so/matejag/Portfolio-3D-art-9005b79fb78a4c41826989026f97fe77"> <i class="fa-solid fa-cube"></i> 3D Art</a>
+		<a id="More" onclick="navigate(this.id)" href="https://www.notion.so/matejag/Portfolio-more-c81dd1d6959d4cd587f674f64f8ce6cf"> <i class="fa-solid fa-wand-magic-sparkles"></i> More</a>
+		<a id="E-Learning" onclick="navigate(this.id)" href="https://www.notion.so/matejag/Portfolio-E-learning-507855896c7041dba855da8d482ef1ec"> <i class="fa-solid fa-book"></i> E-Learning</a>
+		<a id="MyGamingHistory" onclick="navigate(this.id)" href="https://www.notion.so/matejag/My-Gaming-History-e7d4dd1535a548b79068b4a9c5a44276"> <i class="fa-solid fa-heart"></i> My Gaming History</a>
+		<a id="MyFavSlots" onclick="navigate(this.id)" href="https://www.notion.so/matejag/My-fav-slots-iGaming-11f88527ab124d26811cf3fc43be26d0"> <i class="fa-solid fa-star"></i> My Fav Slots</a>
+
+
+
+
+	</nav>
+
+
+	<script>
+
+		let direction = "horizontal";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'home')
+				window.open("https://www.notion.so/matejag/Portfolio-main-77342393996640a1ba935ca9f83405a5", '_blank').focus();
+			else if (id == "GameDesign")
+				window.open("https://www.notion.so/matejag/Portfolio-game-design-ebef686823d149f6993ceee8f513c4d3", '_blank').focus();
+			else if (id == "AppDesign")
+				window.open("https://www.notion.so/matejag/Portfolio-app-design-c92e12327f6447f3be6769c76171abe2", '_blank').focus();
+			else if (id == "3D Art")
+				window.open("https://www.notion.so/matejag/Portfolio-3D-art-9005b79fb78a4c41826989026f97fe77", '_blank').focus();
+			else if (id == "More")
+				window.open("https://www.notion.so/matejag/Portfolio-more-c81dd1d6959d4cd587f674f64f8ce6cf", '_blank').focus();
+			else if (id == "E-Learning")
+				window.open("https://www.notion.so/matejag/Portfolio-E-learning-507855896c7041dba855da8d482ef1ec", '_blank').focus();
+			else if (id == "MyGamingHistory")
+				window.open("https://www.notion.so/matejag/My-Gaming-History-e7d4dd1535a548b79068b4a9c5a44276", '_blank').focus();
+			else if (id == "MyFavSlots")
+				window.open("https://www.notion.so/matejag/My-fav-slots-iGaming-11f88527ab124d26811cf3fc43be26d0", '_blank').focus();
+
+			
+
+		}
+	</script>
+
+
+</body>
+
+</html>
